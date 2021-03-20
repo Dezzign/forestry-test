@@ -1,0 +1,21 @@
+baseURL = "http://forestry-test.com/"
+languageCode = "en-us"
+title = "My Forestry Test Site"
+relativeurls = true
+plainIDAnchors = true
+hrefTargetBlank = true
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term", "RSS"]
+[taxonomies]
+category = ""
+tags = ""
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+hardWraps = true
+unsafe = true
+xHTML = true
+plainIDAnchors = true
+hrefTargetBlank = true
+[permalinks]
+dd = "/ss"
