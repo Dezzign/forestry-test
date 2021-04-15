@@ -6,22 +6,24 @@ html {
 }
 body {
     font-size: 17px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 300;
     margin: 0;
     line-height: 1.5;
     background-color: #fff;
+    color: #444;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
     padding: 0
 }
-body,h1, h2, h3, h4 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #444;
-}
 h1, h2, h3, h4 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 32px;
+    color: #444;
 }
 ul, li, blockquote, p, h1, h2, h3, h4, h5 {
     -webkit-padding-start: 0;
@@ -42,54 +44,60 @@ button {
     -moz-appearance: none;
     background-position-y: 0;
 }
-body,div {
+div {
+    display: -webkit-flex;
+    display: flex;
     -webkit-flex-direction: column;
             flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .row {
     max-width: 1280px;
     width: 90%;
+    margin: 48px auto;
     text-align: center;
 }
-.row,.h-one {
+.h-one {
     margin: 48px auto;
 }
-div,.menu-list, .menu-row, nav {
+.menu-list, .menu-row, nav {
     display: -webkit-flex;
     display: flex;
-}
-div,.menu-row, nav {
 }
 .menu-row, nav {
     -webkit-flex-direction: column;
             flex-direction: column;
 }
-nav,.menu-row {
+nav {
     -webkit-justify-content: center;
     justify-content: center;
 }
 .menu-row {
     width: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
     padding: 48px 0;
 }
 .text {
     margin-bottom: 24px;
 }
 /*** Menu styling ***/
-div,.menu-list {
-    -webkit-align-items: center;
-    align-items: center;
-}
 .menu-list {
     -webkit-flex-direction: row;
             flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
 }
 .menu-item {
     margin: 0 24px;
 }
-.a-rule,.b-rule {
+.a-rule {
+    font-size: 12px;
+}
+.b-rule {
     font-size: 12px;
 }
 .c-rule {
@@ -97,8 +105,10 @@ div,.menu-list {
             flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
+    display: -webkit-flex;
+    display: flex;
 }
-.c-rule,.d-rule {
+.d-rule {
     display: -webkit-flex;
     display: flex;
 }
@@ -106,7 +116,10 @@ div,.menu-list {
 /*** Finish menu styling ***/
 
 @media (max-width: 1680px) {
-    .f-rule,.g-rule {
+    .f-rule {
+        font-size: 14px;
+    }
+    .g-rule {
         font-size: 14px;
     }
     .h-rule {

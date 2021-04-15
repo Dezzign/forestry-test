@@ -1,37 +1,46 @@
-.ccc {
-    font-size: 19px;
+.aaa {
     display: -webkit-flex;
     display: flex;
 }
-button,.text {
+button {
     margin-left: auto;
     margin-right: auto;
 }
-.aaa,.bbb {
+.ccc {
+    font-size: 19px;
+}
+.text {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bbb {
     display: -webkit-flex;
     display: flex;
 }
-.a,.c {
+.a {
+    position: absolute;
+    display: block;
     color: red;
     background: pink;
+}
+.b {
+    position: absolute;
+    display: block;
 }
 .c {
     position: absolute;
     display: inline;
+    color: red;
+    background: pink;
     opacity: 0.5;
 }
-.a,.b,.d {
+.d {
     position: absolute;
     display: block;
-}
-.d {
     opacity: 0.5;
     z-index: 2;
     text-align: center;
-}
-
-.text,.ddd {
-    font-size: 14px;
 }
 
 .ddd {
@@ -39,18 +48,39 @@ button,.text {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    font-size: 14px;
+}
+.ccc {
+    display: -webkit-flex;
+    display: flex;
+}
+.ccc {
+    font-size: 19px;
 }
 @media (max-width: 1680px) {
+    .aa-test {
+        display: -webkit-flex;
+        display: flex;
+    }
     .ee-text {
         margin-left: auto;
         margin-right: auto;
     }
-    .aa-test,.bb-test {
+    .ccc {
+        font-size: 22px;
+    }
+    .ccc {
+        font-weight: bold;
+    }
+    .bb-test {
         display: -webkit-flex;
         display: flex;
     }
     .cc-test {
         font-weight: bold;
+    }
+    .ee-text {
+        margin-left: auto;
     }
     .ccc {
         font-size: 22px;
@@ -60,17 +90,21 @@ button,.text {
     }
 }
 @media (max-width: 1440px) {
-    .hhh {
-        -webkit-flex-direction: column;
-                flex-direction: column;
+    .ggg {
         display: -webkit-flex;
         display: flex;
     }
-    .ggg,.jjj {
+    .hhh {
+        -webkit-flex-direction: column;
+                flex-direction: column;
+    }
+    .hhh {
         display: -webkit-flex;
         display: flex;
     }
     .jjj {
+        display: -webkit-flex;
+        display: flex;
         -webkit-flex-direction: column;
                 flex-direction: column;
         -webkit-align-items: center;
