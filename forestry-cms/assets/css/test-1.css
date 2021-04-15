@@ -1,0 +1,67 @@
+.aaa {
+    display: flex;
+}
+button {
+    margin-left: auto;
+    margin-right: auto;
+}
+.ccc {
+    font-size: 19px;
+}
+.text {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bbb {
+    display: flex;
+}
+.a {
+    position: absolute;
+    display: block;
+    color: red;
+    background: pink;
+}
+.b {
+    position: absolute;
+    display: block;
+}
+.c {
+    position: absolute;
+    display: inline;
+    color: red;
+    background: pink;
+    opacity: 0.5;
+}
+.d {
+    position: absolute;
+    display: block;
+    opacity: 0.5;
+    z-index: 2;
+    text-align: center;
+}
+@media (max-width: 1680px) {
+    .aa-test {
+        display: flex;
+    }
+    .ee-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ccc {
+        font-size: 22px;
+    }
+    .ccc {
+        font-weight: bold;
+    }
+}
+@media (max-width: 1440px) {
+    .ggg {
+        display: flex;
+    }
+    .hhh {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+

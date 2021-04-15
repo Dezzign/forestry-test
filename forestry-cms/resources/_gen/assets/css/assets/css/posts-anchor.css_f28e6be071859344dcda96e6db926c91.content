@@ -1,0 +1,1 @@
+div{display:-webkit-flex;display:flex}button,.text{margin-left:auto;margin-right:auto}.text{font-size:14px}figure,main{display:-webkit-flex;display:flex}main{margin-left:auto;margin-right:auto;font-size:14px}address{display:-webkit-flex;display:flex}

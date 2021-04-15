@@ -1,0 +1,48 @@
+.ddd {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.ccc {
+    display: flex;
+}
+.ccc {
+    font-size: 19px;
+}
+@media (max-width: 1680px) {
+    .bb-test {
+        display: flex;
+    }
+    .cc-test {
+        font-weight: bold;
+    }
+    .ee-text {
+        margin-left: auto;
+    }
+    .ccc {
+        font-size: 22px;
+    }
+    .ccc {
+        font-weight: bold;
+    }
+}
+@media (max-width: 1440px) {
+    .hhh {
+        display: flex;
+    }
+    .jjj {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .ccc {
+        font-size: 22px;
+    }
+    .ccc {
+        font-weight: bold;
+    }
+}
+

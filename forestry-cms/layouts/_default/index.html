@@ -6,18 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ .Title }}</title>
 
-    {{ with resources.Get "../assets/css/critical-home.css" | minify }}
-    <style>
-        {{ .Content | safeCSS }}
-    </style>
-    {{ end }}
+  {{ $style := resources.Get "css/critical-home.css" | resources.PostCSS (dict "config" "postcss.config.js" "noMap" true) }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+  <!--CSS for footer-->
+  {{- $CSS := slice (resources.Get "css/test-1.css") (resources.Get "css/test-2.css") | resources.Concat "assets/css/posts-anchor.css" | resources.PostCSS (dict "config" "postcss.config.js" "noMap" false) }}
+  <link rel="stylesheet" href="{{ $CSS.RelPermalink | relURL }}" media="print" onload="this.media='screen'">
+
+
+
+
+
 </head>
 <body>
 {{ partial "menu-home.html" . }}
 <main>
     <div class="row">
         <h1 class="h-one">{{ .Params.main_heading | safeHTML }}</h1>
-        <p class="text">{{ .Params.para_one | safeHTML }}</p>
+        <p class="text">{{ .Params.para_one | safeHTML }} 44</p>
         <p class="text">{{ .Params.para_two | safeHTML }}</p>
     </div>
 </main>
